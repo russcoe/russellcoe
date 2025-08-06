@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Russell Carlsson Coe – Composer & Sound Designer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #f2f2f2;
+      line-height: 1.6;
+    }
+    header {
+      padding: 60px 20px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    section {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      border-bottom: 1px solid #444;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    audio {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      background: #222;
+      border: 1px solid #444;
+      color: #fff;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+    button {
+      background: #fff;
+      color: #000;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    #bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="reel.mp4" type="video/mp4">
+  </video>
+  <div id="overlay"></div>
+
+  <header>
+    <h1>Russell Carlsson Coe</h1>
+    <p>composer and sound designer based in Seattle</p>
+  </header>
+
+  <section>
+    <h2>Bio</h2>
+    <p>
+      Russell Carlsson Coe is a composer and sound designer based in Seattle. His music blends ambient textures, experimental techniques, and cinematic storytelling. Drawing from influences like shoegaze, science fiction, synth pop, and ambient, his work explores emotion through texture — pairing soft melodies with distortion, silence with saturation, and analog synths with layered effects.
+    </p>
+    <p>
+      Russell builds sonic environments that feel both intimate and expansive, like fragments of dreams or memories. His approach centers around atmosphere — crafting pieces that evoke mood, space, and story without needing words.
+    </p>
+    <p>
+      In addition to his solo compositions, Russell is developing a portfolio of original scores for video games, short films, and live events. He’s always open to new collaborations in sound design, media scoring, and visual storytelling.
+    </p>
+    <p>If you'd like to work together — or just want to talk sound — feel free to reach out.</p>
+  </section>
+
+  <section>
+    <h2>Music</h2>
+    <p><strong>robots.wav</strong></p>
+    <audio controls>
+      <source src="robots.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p><strong>deep.wav</strong></p>
+    <audio controls>
+      <source src="deep.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p><strong>bed in try.wav</strong></p>
+    <audio controls>
+      <source src="bed in try.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/mayvqrkk" method="POST">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Russell Carlsson Coe
+  </footer>
+</body>
+</html>
